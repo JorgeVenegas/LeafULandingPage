@@ -12,7 +12,7 @@ app.use(express.json());
 
 
 app.get('/', function(req, res){
-    res.send('Hola')
+    res.render("home");
 });
 
 

@@ -4,6 +4,7 @@
     --clr-gray100: #f0f7f8;
     --clr-dark: #535152;
     --clr-hover: #098B53;
+    --clr-hover-secondary: #989e9b;
     --radius: 0.5rem;
     --font-family:'Montserrat', sans-serif; 
 }
@@ -13,10 +14,19 @@
 *:after {
   box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background: var(--clr-bg);
     font-family: var(--font-family);
+}
+section{
+    height: 100vh;
+}
+section:nth-child(2){
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
 }
 
 .nav-list{
@@ -50,11 +60,63 @@ body {
     background: var(--clr-primary);
     border: none;
     outline: none;
-    border-radius: var(--radius);
+    border-radius: 50px;
     padding: 1rem 2rem;
     cursor: pointer;
     transition: all 200ms ease-in;
 }
 .btn-primary:hover{
     background: var(--clr-hover);
+}
+.btn-secondary{
+    font-family: var(--font-family);
+    font-size: 1rem;
+    background: var(--clr-gray100);
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+.btn-secondary:hover{
+    background: var(--clr-hover-secondary);
+}
+
+.main-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.iphone-img{
+    width: 20%;
+    transform: rotate(10deg);
+}
+.h1-style{
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 5rem;
+    margin-bottom: 5px;
+}
+.h4-style{
+    font-family: var(--font-family);
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+section a{
+    display: inline-block;
+    padding: 10px 0;
+    color: black;
+    text-decoration: none;
+    width: 8rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+.a-primary{
+    background-color: var(--clr-primary);
+}
+.a-secondary{
+    background-color: white;
 }

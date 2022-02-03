@@ -20,8 +20,8 @@
 }
 
 html {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    /* scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
 }
 
 body {
@@ -32,7 +32,7 @@ body {
 section {
     height: 100vh;
     display: flex;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     justify-content: center;
     align-items: center;
 }
@@ -42,9 +42,10 @@ section:nth-child(2) {
 }
 
 navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
 }
+
 .nav-list {
     display: flex;
     justify-content: flex-end;
@@ -109,7 +110,8 @@ navbar {
 .btn-secondary:hover {
     background: var(--clr-hover-secondary);
 }
-.main-info-container{
+
+.main-info-container {
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -125,7 +127,6 @@ navbar {
 .iphone-img {
     width: 15rem;
     transform: rotate(10deg);
-
 }
 
 .h1-style {
@@ -162,7 +163,6 @@ section a {
 .text-container {
     margin-bottom: 5%;
     /* margin-left: 3rem; */
-
 }
 
 .logo-image img {

@@ -44,8 +44,11 @@ section:nth-child(2) {
 section:nth-child(3) {
     background: #FFF;
 }
-section:nth-child(4) {
+section:nth-child(5) {
     height: 90vh;
+}
+section:nth-child(4){
+    background: var(--clr-bg);
 }
 
 navbar {
@@ -259,11 +262,7 @@ section a {
 }
 
 /* SECTION 5 */
-
-#sec5 {
-    background-color: var(--clr-bg);
-}
-.sec5{
+.sec5 {
     color : var(--clr-secondary);
 }
 .main-section5 {

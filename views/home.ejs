@@ -242,4 +242,36 @@
         </div>
     </div>
 </section>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<% if(typeof validaciones != 'undefined') { %>
+	<script>
+		Swal.fire({
+			icon: 'warning',
+			title: 'Oops... Check out the form',
+			text: '<%= validaciones %> ',
+		  })
+	</script>
+<% } %>
+<% if (alertStatus) { %>
+	<script>
+		Swal.fire({
+		icon: 'success',
+		title: 'Done',
+		text: 'Email sent successfully!'
+	  });
+	</script>
+<% } else if(alertStatus === false) { %>
+	<script>
+		Swal.fire({
+		icon: 'error',
+		title: 'Ups, Im working on it! ',
+		text: 'Email not working, try other method'
+	  });
+	</script>
+<% } %>
+<script src="scripts/preventResending.js"></script>
+
 <%- include('partials/components/footer') %>
+
+

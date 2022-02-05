@@ -2,8 +2,9 @@
   "name": "leafulandingpage",
   "version": "1.0.0",
   "description": "LeafU Solutions Landing Page",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start" : "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,8 @@
     "express": "^4.17.2",
     "nodemailer": "^6.7.2",
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "16.13.1"
   }
 }
